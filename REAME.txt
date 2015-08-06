@@ -1,0 +1,8 @@
+1. Create project
+npm init
+2. Add require dependency
+"devDependencies": {
+    "requirejs": "^2.1.18"
+  }
+3. npm install to install package
+4. Create index file
