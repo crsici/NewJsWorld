@@ -9,6 +9,11 @@
   "author": "sici",
   "license": "ISC",
   "devDependencies": {
-    "requirejs": "^2.1.18"
+    "requirejs": "^2.1.18",
+    "jquery": "~2.1.0",
+    "underscore": "~1.4.4",
+    "wire": "~0.10.6",
+    "when":"*",
+    "meld":"*"
   }
 }

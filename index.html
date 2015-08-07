@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Basic example of requireJS integration</title>
+<meta charset="utf-8">
+<title>Basic example of requireJS integration</title>
 </head>
 <body>
-<div id="container">
-    <p>Check console and js files</p>
-</div>
-<script data-main="js/main" src="node_modules/requirejs/require.js"></script>
+	<div class="hello" id="container">
+		<p>Check console and js files</p>
+	</div>
+	<!-- This script is responsible for loading both js file/modules-->
+	<!-- data-main attribute tells require.js to load
+        scripts/init.js after require.js loads. -->
+	<!-- init.js is require configuration. It tells RequireJs how to load our modules 
+		Ref:http://requirejs.org/docs/api.html#config -->
+	<script data-main="js/init" src="node_modules/requirejs/require.js"></script>
 </body>
 </html>

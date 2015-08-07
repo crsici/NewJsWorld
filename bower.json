@@ -1,0 +1,11 @@
+{
+  "name": "helloJsWorld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "sici",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs-domready": "~2.0.1"
+  }
+}
