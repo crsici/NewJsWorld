@@ -6,6 +6,8 @@
   "author": "sici",
   "license": "ISC",
   "dependencies": {
-    "requirejs-domready": "~2.0.1"
+    "requirejs-domready": "~2.0.1",
+    "router.js": "git://github.com/tildeio/router.js.git#cde84fd1a401dfe2c337fdb0dde755b8df939482",
+    "rsvp": "~3.0.17"
   }
 }
