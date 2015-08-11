@@ -1,3 +1,4 @@
+This is simple application using npm, bower, requirejs, wirejs, router(https://github.com/tildeio/router.js), angular
 Build this program by
 npm install
 bower install
