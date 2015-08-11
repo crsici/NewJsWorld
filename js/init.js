@@ -1,11 +1,14 @@
 require.config({
 	baseUrl : './js',
-	deps : [ 'main' ],
+	deps : ['main','rsvp','router'],
 	paths : {
 		'jQuery' : '../node_modules/jquery/dist/jquery',
 		'underscore' : '../node_modules/underscore/underscore',
 		'underscore' : '../node_modules/underscore/underscore',
-		'domReady' : '../bower_components/requirejs-domready/domReady'
+		'domReady' : '../bower_components/requirejs-domready/domReady',
+		'rsvp': '../bower_components/router.js/vendor/deps/rsvp',
+		'route-recognizer': '../bower_components/router.js/vendor/deps/route-recognizer',
+		'router': '../bower_components/router.js/dist/router.amd'
 	},
 	shim : {
 		'jQuery' : {

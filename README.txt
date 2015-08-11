@@ -36,8 +36,12 @@ open index.html by browser. That's it!
 11. Bootstrap wirejs by calling:
 	var context = wire(spec);
 12. Adding bower dependency for router handler
-	"router.js": "git://github.com/tildeio/router.js.git#cde84fd1a401dfe2c337fdb0dde755b8df939482",
-    "rsvp": "~3.0.17"
+	"router.js": "git://github.com/tildeio/router.js.git#cde84fd1a401dfe2c337fdb0dde755b8df939482"
+	https://github.com/tildeio/router.js
+13. Remember deps order  : ['main','rsvp','router']
+14. Add routeHandler and create to spec for it routerHandlers/routerHandler1-spec.js , routerHandlers/routerHandler2-spec.js
+15. Add routeHandlerProxy and reate 2 instance of it in spec.js to load correspondence routerHandler1-spec/routerHandler2-spec
+
 
 	
 	

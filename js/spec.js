@@ -10,6 +10,48 @@ define({ // Top level wire spec
 			module : '../applicationService'
 		}
 	},
+	router:{
+		create: {
+            module: '../applicationRouter',
+            args: [
+                { module: 'router' },
+                [
+                    { $ref: 'routerHandlerProxy1' },
+                    { $ref: 'routerHandlerProxy2' }
+                ]
+            ]
+        }
+	},
+	routerHandlerProxy1: {
+        create: {
+            module: '../RouterHandler',
+            args: [
+                'routerHandler1',
+                { $ref: 'routerHandler1Spec' }
+            ]
+        }
+    },
+	routerHandlerProxy2: {
+        create: {
+            module: '../RouterHandler',
+            args: [
+                'routerHandler2',
+                { $ref: 'routerHandler2Spec' }
+            ]
+        }
+    },
+    routerHandler1Spec: {
+        wire: {
+            spec: '../routerHandlers/routerHandler1-spec',
+            defer: true
+        }
+    },
+    routerHandler2Spec: {
+        wire: {
+            spec: '../routerHandlers/routerHandler2-spec',
+            defer: true
+        }
+    },
 	plugins : [
 	// The debug plugin outputs wiring progress and diagnostic info
 	// to the console
