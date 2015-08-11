@@ -11,6 +11,11 @@
 			var div = $("<div>" + this.name + "</div>");
 			$("#container").append(div);
 			// Bootstrap angular module here!
+			if (this.module) {
+				this.module().then(function(context) {
+					context.main.start();
+				});
+			}
 		};
 
 		return RouterHandler;

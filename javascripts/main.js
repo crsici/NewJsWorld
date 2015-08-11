@@ -4,7 +4,7 @@ require([ 'application', 'spec', 'empty', 'wire' ], function(application, spec,
 
 	var context = wire(spec);
 	
-	console.log('Context :' + context);
+	console.log('//Bootstrap Wire context :' + context);
 	application.start(context);
 
 });

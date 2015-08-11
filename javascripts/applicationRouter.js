@@ -1,16 +1,11 @@
 (function(define) {
-	define(function() {
+	define(['jQuery'],function() {
+		'use strict';
 		
-
 		function ApplicationRouter(Router, handlers) {
-			console.log("Router");
-			console.log(Router);
-			
+
 			var myHandlers = {};
 
-			
-			
-			
 			var router = new Router.default();
 			
 			router.map(function(match) {
@@ -18,18 +13,16 @@
             });
 
             router.getHandler = function(name) {
-                console.log('getHandler name==========================' + name);
+                
                 return myHandlers[name];
             };
 
-            // TODO these hash management functions should be extracted to another module and use a library to hide browser differences, this will do for now.
             $(window).on('hashchange', function(){
-                console.log("Hash URL is " + location.hash.substr(1));
+                
                 router.handleURL(location.hash.substr(1));
             });
 
             $(document).ready(function(){
-                console.log("Onload hash URL is " + location.hash.substr(1));
                 router.handleURL(location.hash.substr(1));
             });
 
@@ -55,7 +48,7 @@
                         },
 
                         setup: function(params, transition) {
-                            console.log("SETUP==============================");
+                            console.log("START HANDLER " + handler.name);
                             handler.start();
                         },
 
@@ -65,16 +58,12 @@
 
                         events: {
                             willTransition: function(transition) {
-                            	console.log("willTransition==============================");
+                            	console.log("willTransition!");
                             }
                         }
                     };
-
-                    
-                        console.log("---------------------------");
-                        console.log(handler.name);
-                        console.log('match ' + handler.name + ' to ' + handler.name);
-                        match("/"+handler.name).to(handler.name);
+                       
+                    match("/"+handler.name).to(handler.name);
                    
                 });
             }

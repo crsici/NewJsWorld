@@ -1,19 +1,18 @@
-{
-  "name": "helloJsWorld",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "sici",
-  "license": "ISC",
-  "devDependencies": {
-    "requirejs": "^2.1.18",
-    "jquery": "~2.1.0",
-    "underscore": "~1.4.4",
-    "wire": "~0.10.6",
-    "when":"*",
-    "meld":"*"
-  }
+{  
+   "name":"helloJsWorld",
+   "version":"1.0.0",
+   "description":"",
+   "main":"index.js",
+   "scripts":{  
+      "test":"echo \"Error: no test specified\" && exit 1"
+   },
+   "author":"trungp",
+   "devDependencies":{  
+      "requirejs":"^2.1.18",
+      "jquery":"~2.1.0",
+      "underscore":"~1.4.4",
+      "wire":"~0.10.6",
+      "when":"*",
+      "meld":"*"
+   }
 }

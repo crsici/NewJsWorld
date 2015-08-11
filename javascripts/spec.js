@@ -24,7 +24,7 @@ define({ // Top level wire spec
 	},
 	routerHandlerProxy1: {
         create: {
-            module: '../RouterHandler',
+            module: '../RouterHandlerProxy',
             args: [
                 'routerHandler1',
                 { $ref: 'routerHandler1Spec' }
@@ -33,7 +33,7 @@ define({ // Top level wire spec
     },
 	routerHandlerProxy2: {
         create: {
-            module: '../RouterHandler',
+            module: '../RouterHandlerProxy',
             args: [
                 'routerHandler2',
                 { $ref: 'routerHandler2Spec' }

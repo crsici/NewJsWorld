@@ -9,13 +9,12 @@
 
 		RouteHandlerProxy.prototype.start = function() {
 			var proxy = this;
-			console.log("RouteHandlerProxy Start" );
-			if (!proxy.proxied) {
-				this.spec().then(function(context) {
-					console.log("Actual RouterHandler Star" );
-					context.handler.start();
-				});
-			}
+
+			this.spec().then(function(context) {
+				console.log("Actual RouterHandler Start");
+				context.handler.start();
+			});
+
 		};
 
 		return RouteHandlerProxy;
