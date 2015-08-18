@@ -1,7 +1,9 @@
 require
 		.config({
+			// All js files under this folder can be loaded directly, exp :
+			// main, empty
 			baseUrl : './javascripts',
-			deps : [ 'main', 'rsvp', 'router' ,'angular','text'],
+			deps : [ 'jQuery','oldmodule','main', 'rsvp', 'router', 'angular', 'text' ],
 			paths : {
 				'jQuery' : '../node_modules/jquery/dist/jquery',
 				'underscore' : '../node_modules/underscore/underscore',
@@ -11,14 +13,14 @@ require
 				'route-recognizer' : '../bower_components/router.js/vendor/deps/route-recognizer',
 				'router' : '../bower_components/router.js/dist/router.amd',
 				'text' : '../bower_components/requirejs-text/text',
-				'angular' : '../bower_components/angular/angular',
+				'angular' : '../bower_components/angular/angular'
 			},
 			shim : {
 				'jQuery' : {
 					exports : '$'
 				},
-				'underscore' : {
-					exports : '_'
+				'oldmodule' : {
+					exports : 'old'
 				}
 			},
 			packages : [ {

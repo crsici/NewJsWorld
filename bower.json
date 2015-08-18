@@ -7,7 +7,7 @@
    "license":"ISC",
    "dependencies":{  
       "requirejs-domready":"~2.0.1",
-      "router.js":"git://github.com/tildeio/router.js.git#cde84fd1a401dfe2c337fdb0dde755b8df939482",
+      "router.js":"git://github.com/tildeio/router.js.git#b57acfe68f00a2803dc6fbb1c99bb7e5d042a04e",
       "requirejs-text":"~2.0.10",
       "angular":"*"
    }
