@@ -44,7 +44,30 @@ open index.html by browser. That's it!
 15. Add routeHandlerProxy and reate 2 instance of it in spec.js to load correspondence routerHandler1-spec/routerHandler2-spec
 16. If ERR_FILE_NOT_FOUND move out of base url then go through specific path
 # RSVP not found ISSUE: https://github.com/tildeio/rsvp.js/issues/231
-	
+
+
+RequireJS(init.js)
+---------------------------------------------------------------------------------------------------------------------
+- main.js 
+-	-> wire(spec.js)			
+-		-------------------------------------------------------------------------------------------------------------
+-		- 
+-		-	routerHandlerProxy1{
+-		-		routerHandler1{
+-		-			module_prototype:module1{
+-		-				angular.bootstrap(view, [ name ]);
+-		-			}
+-		-		}
+-		-	}
+-		-
+-		-	routerHandlerProxy2{
+-		-		routerHandler2{
+-		-			null
+-		-		}
+-		-	}
+-		-
+-		--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------	
 	
 	
 	
